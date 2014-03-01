@@ -1,0 +1,224 @@
+/* 
+black: #333333; red: #C02522; blue: #58B4DB; light-blue: #75c043; yellow: #ffb618
+Lightgreen: ##98c655 dark-green: #489142; clear-green: #75c043; 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic);
+
+/******************/
+/*Generel settings*/
+/******************/
+/*Reset settings*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*Generel styling*/
+html {
+    height: 100%;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', serif;
+    font-style: normal;
+    font-weight: 200;
+    color: #4a4748;
+    color: #333333;
+ /*text-rendering: optimizeLegibility;*/
+    ;
+}
+
+body {
+    height: 100%;
+    line-height: 1.618em;
+}
+
+h1 {
+    line-height: 1.1;
+    font-weight: 200;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.56;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+p.divider {
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-width: 0rem 0rem 0.08rem 0rem;
+    border-style: dotted;
+    text-transform: uppercase;
+    clear: both;
+    padding-top: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #333333;
+}
+
+a:active {
+    outline: none;
+}
+
+a:hover {
+    color: #58B4DB;
+    transition: all 0.2s linear 0s;
+}
+
+/*.input                                { display: table }
+.input >input                           { display: table-cell; vertical-align: middle; margin-right: 0.5rem; }
+.input >button                          { display: table-cell; vertical-align: middle; }*/
+::selection {
+    background: #C02522;
+    color: white;
+ /* Safari */
+    ;
+}
+
+::-moz-selection {
+    background: #C02522;
+    color: white;
+ /* Firefox */
+    ;
+}
+
+.content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.bg-color {
+    background-color: #fffefe;
+}
+
+.yellow {
+    color: #ffb618;
+}
+
+/******************/
+/*  Post Header   */
+/******************/
+header {
+    margin: 2.5rem 1rem 0rem 1rem;
+}
+
+header .bold {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.serif {
+    font-family: serif;
+    font-style: italic;
+}
+
+header .serif {
+    font.font-size: 0.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+
+/******************/
+/*Adapt to screen */
+/******************/
+@media only screen and (min-width: 30em) {
+ 
+    p {
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+ 
+    html {
+        font-size: 100%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        line-height: 1.1;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+ 
+    html {
+        font-size: 100%;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+
+    html {
+        font-size: 110%;
+    }
+
+    .content {
+        width: 70%;
+    }
+}
